@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Interactive Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 id="title">My Interactive Portfolio</h1>
+
+<p class="subtitle">
+CSE Student | Web Developer
+</p>
+
+<h2 id="greeting"></h2>
+
+<button onclick="theme()">🌙 Dark / Light Mode</button>
+
+</header>
+
+<nav>
+
+<button onclick="showAbout()">About</button>
+
+<button onclick="showProjects()">Projects</button>
+
+<button onclick="showContact()">Contact</button>
+
+</nav>
+
+<!-- ABOUT -->
+
+<div id="about" class="card">
+
+<h2>About Me</h2>
+
+<img src="profile.jpeg">
+
+<p><b>Name :</b> Golam Ahmed Kabir Fahad</p>
+
+<p><b>Department :</b> CSE</p>
+
+<p><b>University :</b> AIUB</p>
+
+<p><b>Skills :</b> HTML, CSS, JavaScript</p>
+
+<p>I want to become a Web Developer.</p>
+
+</div>
+
+<!-- PROJECTS -->
+
+<div id="projects" class="card" style="display:none;">
+
+<h2>Projects</h2>
+
+<ul>
+
+<li>Personal Portfolio Website</li>
+
+<li>Student Management System</li>
+
+<li>Library Management System</li>
+
+<li>Online Food Ordering System</li>
+
+</ul>
+
+</div>
+
+<!-- CONTACT -->
+
+<div id="contact" class="card" style="display:none;">
+
+<h2>Contact Me</h2>
+
+<p>Feel free to contact me.</p>
+
+<form onsubmit="return handleSubmit()">
+
+<label>Name</label>
+
+<br>
+
+<input type="text" id="name">
+
+<br>
+
+<span id="nameError" class="error"></span>
+
+<br><br>
+
+<label>Email</label>
+
+<br>
+
+<input type="text" id="email">
+
+<br>
+
+<span id="emailError" class="error"></span>
+
+<br><br>
+
+<label>Message</label>
+
+<br>
+
+<textarea id="message"></textarea>
+
+<br>
+
+<span id="messageError" class="error"></span>
+
+<br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
